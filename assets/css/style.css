@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+ 
+body{ 
+    background-image: linear-gradient(315deg, #e0470a 50%, #e09111 50%);
+    color: #ddd;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    margin: 0;
+    min-height: 100vh;
+} 
+
+.pw-container{
+    background-color: orangered;
+    min-width: 400px;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0,0,0, 0.5);
+}
+
+.pw-header{
+    padding: 1rem;
+}
+
+.pw{
+    background-image: linear-gradient(315deg, #e09111 50%, #e0470a 50%);
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    height: 70px;
+    width: 100%;
+    border: 1px solid #aaa;
+    position: relative;
+    padding: 1rem;
+    overflow: auto;
+}
+
+.pw button{
+    background-image: linear-gradient(315deg, #e09111 30%,  #e0470a 70%);
+    border: 0.5px solid #bbb;
+    color: #bbbbbb;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0, 20%);
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+    opacity: 0;
+    
+}
+
+.pw:hover button{
+    opacity: 1;
+    transform: translate(0, 0%) ;
+}
+
+.pw-body{
+    padding: 0 1rem 1rem;
+}
+
+.form-control{
+    color: #dddddd;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+}
+
+.generate{
+    background-image: linear-gradient(315deg, #e0470a 20%,  #e09111 80%);
+    display: block;
+    color: #ccc;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0.75rem;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 1rem;
+}
